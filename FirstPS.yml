@@ -7,5 +7,7 @@ steps:
     echo This multiline script always runs in Bash.
     echo Even on Windows machines!
 - pwsh: |
-    Write-Host "This multiline script always runs in PowerShell Core."
-    Write-Host "Working Directory : $(System.DefaultWorkingDirectory)"
+    if(Test-Path -Path $(System.DefaultWorkingDirectory)/FirstFile.ps1){
+      Write-Output "File path exist"
+    }
+    else{Write-Output "File Path Doesn't exist"}
