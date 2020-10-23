@@ -1,0 +1,8 @@
+steps:
+- powershell: Write-Host Hello $(name)
+  displayName: Say hello
+  name: firstStep
+  workingDirectory: $(build.sourcesDirectory)
+  failOnStderr: true
+  env:
+    name: Microsoft
