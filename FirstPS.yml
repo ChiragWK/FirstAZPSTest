@@ -8,4 +8,4 @@ steps:
     echo Even on Windows machines!
 - pwsh: |
     Write-Host "This multiline script always runs in PowerShell Core."
-    Write-Host "Variable Value : $(My_Var)"
+    Write-Host "Working Directory : $(System.DefaultWorkingDirectory)"
