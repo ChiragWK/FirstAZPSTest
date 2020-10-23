@@ -1,5 +1,7 @@
 steps:
-- powershell: Write-Host "Hello World"
+- powershell: | 
+    Write-Host "Hello World"
+    Write-Host "This is the second Line"
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)
