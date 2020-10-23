@@ -1,3 +1,6 @@
+
+variables:
+  MY_Var : 'Hello'
 steps:
 - script: echo This runs in the default shell on any machine
 - bash: |
@@ -5,4 +8,4 @@ steps:
     echo Even on Windows machines!
 - pwsh: |
     Write-Host "This multiline script always runs in PowerShell Core."
-    Write-Host "Even on non-Windows machines!"
+    Write-Host "Variable Value : $(My_Var)"
