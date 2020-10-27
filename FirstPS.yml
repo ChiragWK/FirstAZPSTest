@@ -4,4 +4,6 @@ steps:
   - task: PowerShell@2
     inputs: 
       filePath: '$(System.DefaultWorkingDirectory)/FirstFile.ps1'
+    displayName: 'Script Test'
+      
    
